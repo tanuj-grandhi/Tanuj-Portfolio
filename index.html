@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tanuj Grandhi | Software Developer Portfolio</title>
+  <meta name="description" content="Explore Tanuj Grandhi's software projects in Python, Generative AI, NLP, and operating systems, alongside technical skills, education, certifications, and GitHub repositories." />
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Tanuj Grandhi | Software Developer Portfolio" />
+  <meta property="og:description" content="B.Tech CSE student at LPU building projects in Python, Generative AI, NLP, and Operating Systems." />
+  <meta property="og:url" content="https://tanuj-grandhi.github.io" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Tanuj Grandhi | Software Developer Portfolio" />
+  <meta name="twitter:description" content="B.Tech CSE student at LPU building projects in Python, Generative AI, NLP, and Operating Systems." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Favicon placeholder -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>TG</text></svg>" />
+</head>
+
+<body>
+
+  <!-- ===================== SCROLL PROGRESS BAR ===================== -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <header class="site-header" id="siteHeader">
+    <nav class="nav-container" aria-label="Primary navigation">
+
+      <!-- Wordmark / Logo -->
+      <a href="#hero" class="nav-wordmark" aria-label="Tanuj Grandhi — Home">
+        <span class="wordmark-initials">TG.</span>
+        <span class="wordmark-full">TANUJ GRANDHI</span>
+      </a>
+
+      <!-- Desktop nav links -->
+      <ul class="nav-links" role="list">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- CV Download button -->
+      <a href="cv/Tanuj_Grandhi_CV.pdf" class="btn btn-cv" download aria-label="Download Tanuj Grandhi's CV as PDF">
+        Download CV
+      </a>
+
+      <!-- Mobile hamburger -->
+      <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+
+    </nav>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Navigation menu">
+      <ul class="mobile-nav-links" role="list">
+        <li><a href="#about" class="mobile-nav-link">About</a></li>
+        <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+        <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+        <li><a href="#experience" class="mobile-nav-link">Experience</a></li>
+        <li><a href="#education" class="mobile-nav-link">Education</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+        <li>
+          <a href="cv/Tanuj_Grandhi_CV.pdf" class="mobile-nav-link mobile-cv-link" download>Download CV ↓</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="hero" aria-label="Introduction">
+    <div class="hero-inner">
+
+      <!-- Left: Greeting + Name + supporting info -->
+      <div class="hero-identity">
+
+        <!-- Greeting line -->
+        <p class="hero-greeting name-line">Hey, I'm</p>
+
+        <!-- Big name -->
+        <div class="hero-name-block">
+          <h1 class="hero-name">
+            <span class="name-line">Tanuj</span>
+            <span class="name-line name-line--accent">Grandhi.</span>
+          </h1>
+          <div class="hero-orange-rule" aria-hidden="true"></div>
+        </div>
+
+        <p class="hero-title">
+          Computer Science Engineering Student<br />
+          <span class="hero-tags">Python · Software Development · AI Applications</span>
+        </p>
+
+        <p class="hero-intro">
+          I build software projects that explore AI-powered learning, natural language processing, and core computer science concepts. I enjoy turning technical ideas into practical, interactive applications.
+        </p>
+
+        <div class="hero-ctas">
+          <a href="#projects" class="btn btn-primary">Explore My Projects</a>
+          <a href="cv/Tanuj_Grandhi_CV.pdf" class="btn btn-outline" download>Download My CV</a>
+        </div>
+
+        <a href="https://github.com/tanuj-grandhi" class="hero-github-link arrow-link" target="_blank" rel="noopener noreferrer">
+          Explore my GitHub →
+        </a>
+      </div>
+
+      <!-- Right: Photo -->
+      <div class="hero-photo-col">
+        <div class="hero-section-num" aria-hidden="true">00</div>
+        <div class="hero-photo-frame">
+          <img
+            src="images/tanuj.png"
+            alt="Tanuj Grandhi — smiling, seated at a wooden chair"
+            class="hero-photo"
+            draggable="false"
+          />
+          <div class="hero-photo-label" aria-hidden="true">
+            <span class="hero-label">B.Tech CSE · LPU</span>
+            <span class="hero-label hero-label--accent">Project-focused developer</span>
+          </div>
+        </div>
+        <!-- Background watermark headline -->
+        <h2 class="hero-headline hero-headline--bg" aria-hidden="true">
+          <span class="headline-line">BUILDING</span>
+          <span class="headline-line">IDEAS INTO</span>
+          <span class="headline-line headline-line--outline">DIGITAL</span>
+          <span class="headline-line">REALITY.</span>
+        </h2>
+      </div>
+
+    </div>
+
+    <!-- Decorative vertical rule -->
+    <div class="hero-vert-rule" aria-hidden="true"></div>
+  </section>
+
+  <div class="section-divider" aria-hidden="true"></div>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="section about-section" id="about" aria-labelledby="about-heading">
+    <div class="container">
+
+      <div class="section-label reveal">
+        <span class="label-number">01</span>
+        <span class="label-slash">/</span>
+        <span class="label-text">ABOUT</span>
+      </div>
+
+      <h2 class="section-heading reveal" id="about-heading">
+        CURIOUS BY NATURE.<br />
+        <span class="heading-accent">BUILDER BY PRACTICE.</span>
+      </h2>
+
+      <div class="about-grid">
+
+        <div class="about-intro reveal-left">
+          <p class="about-body">
+            I am a Computer Science and Engineering student at Lovely Professional University with an interest in Python development, AI-powered applications, natural language processing, and software engineering.
+          </p>
+          <p class="about-body">
+            Through academic and personal projects, I have explored how programming concepts can be applied to build useful, interactive tools — from generative AI study assistants to NLP text-rewriting engines and operating systems simulators.
+          </p>
+          <p class="about-body">
+            I enjoy the process of breaking down complex problems and implementing clear, structured solutions.
+          </p>
+        </div>
+
+        <div class="about-interests reveal-right">
+          <h3 class="interests-label">AREAS OF INTEREST</h3>
+          <ol class="interests-list" role="list">
+            <li class="interests-item">
+              <span class="interest-num" aria-hidden="true">01</span>
+              <span>Python and software development</span>
+            </li>
+            <li class="interests-item">
+              <span class="interest-num" aria-hidden="true">02</span>
+              <span>Generative AI and NLP</span>
+            </li>
+            <li class="interests-item">
+              <span class="interest-num" aria-hidden="true">03</span>
+              <span>Data structures and algorithms</span>
+            </li>
+            <li class="interests-item">
+              <span class="interest-num" aria-hidden="true">04</span>
+              <span>Operating systems and simulations</span>
+            </li>
+            <li class="interests-item">
+              <span class="interest-num" aria-hidden="true">05</span>
+              <span>Data analysis and visualization</span>
+            </li>
+          </ol>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS ===================== -->
+  <section class="section skills-section" id="skills" aria-labelledby="skills-heading">
+    <div class="container">
+
+      <div class="section-label reveal">
+        <span class="label-number">02</span>
+        <span class="label-slash">/</span>
+        <span class="label-text">TOOLKIT</span>
+      </div>
+
+      <h2 class="section-heading reveal" id="skills-heading">
+        TOOLS I USE<br />
+        <span class="heading-accent">TO BUILD AND EXPLORE.</span>
+      </h2>
+
+      <div class="skills-grid">
+
+        <div class="skill-category stagger-item">
+          <h3 class="skill-category-label">Programming Languages</h3>
+          <div class="skill-tags" role="list">
+            <span class="skill-tag" role="listitem">Python</span>
+            <span class="skill-tag" role="listitem">SQL</span>
+            <span class="skill-tag" role="listitem">C++</span>
+            <span class="skill-tag" role="listitem">C</span>
+            <span class="skill-tag" role="listitem">Java</span>
+          </div>
+        </div>
+
+        <div class="skill-category stagger-item">
+          <h3 class="skill-category-label">Data Science &amp; NLP</h3>
+          <div class="skill-tags" role="list">
+            <span class="skill-tag" role="listitem">Pandas</span>
+            <span class="skill-tag" role="listitem">NumPy</span>
+            <span class="skill-tag" role="listitem">Matplotlib</span>
+            <span class="skill-tag" role="listitem">Scikit-learn</span>
+            <span class="skill-tag" role="listitem">NLTK</span>
+            <span class="skill-tag" role="listitem">TF-IDF</span>
+          </div>
+        </div>
+
+        <div class="skill-category stagger-item">
+          <h3 class="skill-category-label">Tools &amp; Platforms</h3>
+          <div class="skill-tags" role="list">
+            <span class="skill-tag" role="listitem">Power BI</span>
+            <span class="skill-tag" role="listitem">MS SQL Server</span>
+            <span class="skill-tag" role="listitem">Jupyter Notebook</span>
+            <span class="skill-tag" role="listitem">VS Code</span>
+            <span class="skill-tag" role="listitem">Git</span>
+            <span class="skill-tag" role="listitem">GitHub</span>
+            <span class="skill-tag" role="listitem">Ubuntu</span>
+          </div>
+        </div>
+
+        <div class="skill-category stagger-item">
+          <h3 class="skill-category-label">Soft Skills</h3>
+          <div class="skill-tags" role="list">
+            <span class="skill-tag skill-tag--soft" role="listitem">Problem-Solving</span>
+            <span class="skill-tag skill-tag--soft" role="listitem">Team Leadership</span>
+            <span class="skill-tag skill-tag--soft" role="listitem">Adaptability</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FEATURED PROJECTS ===================== -->
+  <section class="section projects-section" id="projects" aria-labelledby="projects-heading">
+    <div class="container">
+
+      <div class="section-label reveal">
+        <span class="label-number">03</span>
+        <span class="label-slash">/</span>
+        <span class="label-text">SELECTED WORK</span>
+      </div>
+
+      <h2 class="section-heading reveal" id="projects-heading">
+        THREE PROJECTS.<br />
+        <span class="heading-accent">THREE WAYS TO SOLVE PROBLEMS.</span>
+      </h2>
+
+      <!-- Project 01: SmartStudy AI -->
+      <article class="project-entry project-entry--odd reveal" aria-labelledby="proj1-title">
+        <div class="project-meta">
+          <span class="project-number" aria-hidden="true">01</span>
+          <span class="project-category">Generative AI / Educational Technology</span>
+        </div>
+
+        <div class="project-content">
+          <div class="project-text">
+            <h3 class="project-title" id="proj1-title">SmartStudy AI</h3>
+            <p class="project-purpose">
+              An AI-powered educational application designed to help students create personalized study plans, organize learning, and monitor academic progress.
+            </p>
+
+            <div class="project-tech" role="list" aria-label="Technologies used">
+              <span class="tech-tag" role="listitem"><code>HTML</code></span>
+              <span class="tech-tag" role="listitem"><code>CSS</code></span>
+              <span class="tech-tag" role="listitem"><code>JavaScript</code></span>
+              <span class="tech-tag" role="listitem"><code>Python</code></span>
+              <span class="tech-tag" role="listitem"><code>Gemini API</code></span>
+              <span class="tech-tag" role="listitem"><code>Claude API</code></span>
+              <span class="tech-tag" role="listitem"><code>OpenAI API</code></span>
+              <span class="tech-tag" role="listitem"><code>EmailJS</code></span>
+            </div>
+
+            <ul class="project-highlights" aria-label="Technical highlights">
+              <li>Integrated Google Gemini, Anthropic Claude, and OpenAI APIs for academic assistance and personalized seven-day study plan generation.</li>
+              <li>Implemented spaced repetition, smart rescheduling, progress analytics, streak tracking, and notification features.</li>
+              <li>Supported localStorage-based persistence with optional Firebase integration.</li>
+            </ul>
+
+            <div class="project-links">
+              <a href="https://github.com/tanuj-grandhi/SmartStudy-AI"
+                 class="btn btn-github arrow-link"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 aria-label="View SmartStudy AI on GitHub">
+                View on GitHub →
+              </a>
+            </div>
+          </div>
+
+          <div class="project-visual" aria-hidden="true">
+            <div class="project-mockup project-mockup--ai">
+              <div class="mockup-header">
+                <span class="mockup-dot"></span>
+                <span class="mockup-dot"></span>
+                <span class="mockup-dot"></span>
+                <span class="mockup-title-bar">SmartStudy AI</span>
+              </div>
+              <div class="mockup-body">
+                <div class="mockup-card mockup-card--primary">
+                  <div class="mockup-label">Study Plan</div>
+                  <div class="mockup-bar" style="width:85%"></div>
+                  <div class="mockup-bar" style="width:60%"></div>
+                </div>
+                <div class="mockup-card">
+                  <div class="mockup-label">Day 1 — Mathematics</div>
+                  <div class="mockup-tag">Gemini AI</div>
+                </div>
+                <div class="mockup-card">
+                  <div class="mockup-label">Day 2 — Physics</div>
+                  <div class="mockup-tag">Claude</div>
+                </div>
+                <div class="mockup-streak">
+                  <span>🔥 Streak: 7 days</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <div class="project-divider" aria-hidden="true"></div>
+
+      <!-- Project 02: ToneShift -->
+      <article class="project-entry project-entry--even reveal" aria-labelledby="proj2-title">
+        <div class="project-meta">
+          <span class="project-number" aria-hidden="true">02</span>
+          <span class="project-category">Natural Language Processing / Python</span>
+        </div>
+
+        <div class="project-content">
+          <div class="project-visual" aria-hidden="true">
+            <div class="project-mockup project-mockup--nlp">
+              <div class="mockup-header">
+                <span class="mockup-dot"></span>
+                <span class="mockup-dot"></span>
+                <span class="mockup-dot"></span>
+                <span class="mockup-title-bar">ToneShift</span>
+              </div>
+              <div class="mockup-body mockup-body--nlp">
+                <div class="mockup-input-box">
+                  <div class="mockup-label">Input Text</div>
+                  <div class="mockup-text-lines">
+                    <div class="text-line" style="width:100%"></div>
+                    <div class="text-line" style="width:80%"></div>
+                    <div class="text-line" style="width:90%"></div>
+                  </div>
+                </div>
+                <div class="mockup-controls">
+                  <span class="mockup-control active">Formal</span>
+                  <span class="mockup-control">Casual</span>
+                  <span class="mockup-control">Academic</span>
+                </div>
+                <div class="mockup-output-box">
+                  <div class="mockup-label">Rewritten Output</div>
+                  <div class="mockup-text-lines">
+                    <div class="text-line" style="width:95%"></div>
+                    <div class="text-line" style="width:75%"></div>
+                  </div>
+                </div>
+                <div class="mockup-badge">Offline · NLP</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-text">
+            <h3 class="project-title" id="proj2-title">ToneShift</h3>
+            <p class="project-purpose">
+              An offline NLP-based text rewriting application that helps users adapt text to different tones, audiences, formality levels, and lengths.
+            </p>
+
+            <div class="project-tech" role="list" aria-label="Technologies used">
+              <span class="tech-tag" role="listitem"><code>Python</code></span>
+              <span class="tech-tag" role="listitem"><code>Streamlit</code></span>
+              <span class="tech-tag" role="listitem"><code>NLTK</code></span>
+              <span class="tech-tag" role="listitem"><code>Regex</code></span>
+              <span class="tech-tag" role="listitem"><code>TF-IDF</code></span>
+            </div>
+
+            <ul class="project-highlights">
+              <li>Built a rule-based rewriting engine with vocabulary mapping, contraction handling, audience-specific terminology replacement, and sentence-length adjustment.</li>
+              <li>Implemented customizable tone, audience, formality, and text-length controls via an interactive Streamlit interface.</li>
+              <li>Developed meaning-preservation checks using TF-IDF, cosine similarity, Jaccard similarity, content-word coverage, and entity retention.</li>
+            </ul>
+
+            <div class="project-badges">
+              <span class="project-badge project-badge--offline">Fully Offline</span>
+              <span class="project-badge project-badge--nlp">Rule-based NLP</span>
+            </div>
+
+            <div class="project-links">
+              <a href="https://github.com/tanuj-grandhi/ToneShift"
+                 class="btn btn-github arrow-link"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 aria-label="View ToneShift on GitHub">
+                View on GitHub →
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <div class="project-divider" aria-hidden="true"></div>
+
+      <!-- Project 03: Virtual Memory Optimization Simulator -->
+      <article class="project-entry project-entry--odd reveal" aria-labelledby="proj3-title">
+        <div class="project-meta">
+          <span class="project-number" aria-hidden="true">03</span>
+          <span class="project-category">Operating Systems / Algorithms</span>
+        </div>
+
+        <div class="project-content">
+          <div class="project-text">
+            <h3 class="project-title" id="proj3-title">Virtual Memory Optimization Simulator</h3>
+            <p class="project-purpose">
+              An interactive simulator that demonstrates how virtual memory page replacement algorithms behave under different page-reference sequences.
+            </p>
+
+            <div class="project-tech" role="list" aria-label="Technologies used">
+              <span class="tech-tag" role="listitem"><code>Python</code></span>
+              <span class="tech-tag" role="listitem"><code>Tkinter</code></span>
+              <span class="tech-tag" role="listitem"><code>Matplotlib</code></span>
+            </div>
+
+            <ul class="project-highlights">
+              <li>Implemented FIFO, LRU, and Optimal page replacement algorithms with accurate simulation logic.</li>
+              <li>Created an interactive Tkinter interface for custom page-reference sequences and frame-size inputs.</li>
+              <li>Calculated page faults, page hits, and hit ratios, with comparative Matplotlib visualizations.</li>
+            </ul>
+
+            <div class="project-links">
+              <a href="https://github.com/tanuj-grandhi/Virtual-Memory-Optimization-Simulator-"
+                 class="btn btn-github arrow-link"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 aria-label="View Virtual Memory Simulator on GitHub">
+                View on GitHub →
+              </a>
+            </div>
+          </div>
+
+          <div class="project-visual" aria-hidden="true">
+            <!-- Page frame diagram -->
+            <div class="page-frame-diagram">
+              <div class="pfd-title">Page Frame Simulation</div>
+              <div class="pfd-algorithms">
+                <div class="pfd-algo">
+                  <span class="pfd-algo-name">FIFO</span>
+                  <div class="pfd-frames">
+                    <div class="pfd-frame pfd-frame--fault">1</div>
+                    <div class="pfd-frame pfd-frame--fault">2</div>
+                    <div class="pfd-frame pfd-frame--hit">3</div>
+                    <div class="pfd-frame pfd-frame--fault">4</div>
+                    <div class="pfd-frame pfd-frame--hit">1</div>
+                  </div>
+                  <span class="pfd-faults">Faults: 4</span>
+                </div>
+                <div class="pfd-algo">
+                  <span class="pfd-algo-name">LRU</span>
+                  <div class="pfd-frames">
+                    <div class="pfd-frame pfd-frame--fault">1</div>
+                    <div class="pfd-frame pfd-frame--fault">2</div>
+                    <div class="pfd-frame pfd-frame--hit">3</div>
+                    <div class="pfd-frame pfd-frame--hit">4</div>
+                    <div class="pfd-frame pfd-frame--hit">1</div>
+                  </div>
+                  <span class="pfd-faults pfd-faults--better">Faults: 3</span>
+                </div>
+                <div class="pfd-algo">
+                  <span class="pfd-algo-name">OPT</span>
+                  <div class="pfd-frames">
+                    <div class="pfd-frame pfd-frame--fault">1</div>
+                    <div class="pfd-frame pfd-frame--fault">2</div>
+                    <div class="pfd-frame pfd-frame--hit">3</div>
+                    <div class="pfd-frame pfd-frame--hit">4</div>
+                    <div class="pfd-frame pfd-frame--hit">1</div>
+                  </div>
+                  <span class="pfd-faults pfd-faults--best">Faults: 2</span>
+                </div>
+              </div>
+              <div class="pfd-legend">
+                <span class="pfd-legend-item pfd-legend--fault">Page Fault</span>
+                <span class="pfd-legend-item pfd-legend--hit">Page Hit</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ===================== MORE EXPERIMENTS ===================== -->
+  <section class="section more-section" id="more" aria-labelledby="more-heading">
+    <div class="container">
+
+      <div class="section-label reveal">
+        <span class="label-number">04</span>
+        <span class="label-slash">/</span>
+        <span class="label-text">MORE EXPERIMENTS</span>
+      </div>
+
+      <h2 class="section-heading reveal" id="more-heading">
+        MORE THINGS<br />
+        <span class="heading-accent">I'VE BUILT.</span>
+      </h2>
+
+      <div class="more-projects-grid">
+
+        <a href="https://github.com/tanuj-grandhi/India-IPC-Crime-Trends-2001-2012"
+           class="more-project-row stagger-item"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="India IPC Crime Trends 2001–2012 — View on GitHub">
+          <div class="more-project-info">
+            <span class="more-project-name">India IPC Crime Trends 2001–2012</span>
+            <span class="more-project-desc">Crime trend analysis and data visualization across India using IPC categories</span>
+          </div>
+          <div class="more-project-meta">
+            <span class="lang-badge lang-badge--python">Python</span>
+            <span class="more-arrow">→</span>
+          </div>
+        </a>
+
+        <a href="https://github.com/tanuj-grandhi/Restuarnt-menu"
+           class="more-project-row stagger-item"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="Restaurant Menu — View on GitHub">
+          <div class="more-project-info">
+            <span class="more-project-name">Restaurant Menu</span>
+            <span class="more-project-desc">A web-based restaurant menu interface built with HTML and CSS</span>
+          </div>
+          <div class="more-project-meta">
+            <span class="lang-badge lang-badge--html">HTML</span>
+            <span class="more-arrow">→</span>
+          </div>
+        </a>
+
+        <a href="https://github.com/tanuj-grandhi/Tic-Tac-Toe"
+           class="more-project-row stagger-item"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="Tic-Tac-Toe — View on GitHub">
+          <div class="more-project-info">
+            <span class="more-project-name">Tic-Tac-Toe</span>
+            <span class="more-project-desc">An interactive browser-based two-player Tic-Tac-Toe game</span>
+          </div>
+          <div class="more-project-meta">
+            <span class="lang-badge lang-badge--js">JavaScript</span>
+            <span class="more-arrow">→</span>
+          </div>
+        </a>
+
+        <a href="https://github.com/tanuj-grandhi/COVID-19-weekly-death-trends"
+           class="more-project-row stagger-item"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="COVID-19 Weekly Death Trends — View on GitHub">
+          <div class="more-project-info">
+            <span class="more-project-name">COVID-19 Weekly Death Trends</span>
+            <span class="more-project-desc">Analysis and visualization of weekly COVID-19 mortality trend data</span>
+          </div>
+          <div class="more-project-meta">
+            <span class="lang-badge lang-badge--python">Python</span>
+            <span class="more-arrow">→</span>
+          </div>
+        </a>
+
+      </div>
+
+      <div class="more-github-cta reveal">
+        <a href="https://github.com/tanuj-grandhi"
+           class="btn btn-outline arrow-link"
+           target="_blank"
+           rel="noopener noreferrer">
+          See all repositories on GitHub →
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== TRAINING / EXPERIENCE ===================== -->
+  <section class="section training-section" id="experience" aria-labelledby="training-heading">
+    <div class="container">
+
+      <div class="section-label reveal">
+        <span class="label-number">05</span>
+        <span class="label-slash">/</span>
+        <span class="label-text">LEARNING</span>
+      </div>
+
+      <h2 class="section-heading reveal" id="training-heading">
+        LEARNING THE<br />
+        <span class="heading-accent">FUNDAMENTALS.</span>
+      </h2>
+
+      <div class="training-entry reveal">
+        <div class="training-header">
+          <div class="training-info">
+            <span class="training-institution">Centre for Professional Enhancement</span>
+            <span class="training-org">Lovely Professional University</span>
+          </div>
+          <div class="training-date-block">
+            <span class="training-date">June 2026 – July 2026</span>
+          </div>
+        </div>
+
+        <h3 class="training-course">Data Structures and Algorithms Using C++</h3>
+
+        <ul class="training-highlights">
+          <li>Developed a Tic-Tac-Toe game using C++ to apply programming and algorithmic problem-solving concepts.</li>
+          <li>Implemented win/draw detection, turn management, and input validation using arrays and conditional logic.</li>
+          <li>Applied modular programming, testing, and debugging while developing an interactive two-player game.</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== CERTIFICATIONS ===================== -->
+  <section class="section certs-section" id="certifications" aria-labelledby="certs-heading">
+    <div class="container">
+
+      <div class="section-label reveal">
+        <span class="label-number">06</span>
+        <span class="label-slash">/</span>
+        <span class="label-text">CERTIFICATIONS</span>
+      </div>
+
+      <h2 class="section-heading reveal" id="certs-heading">
+        CONTINUOUSLY<br />
+        <span class="heading-accent">ADDING TO MY TOOLKIT.</span>
+      </h2>
+
+      <div class="certs-list">
+
+        <div class="cert-entry stagger-item">
+          <div class="cert-timeline-line" aria-hidden="true">
+            <span class="cert-dot"></span>
+          </div>
+          <div class="cert-content">
+            <div class="cert-header">
+              <h3 class="cert-title">DSA Using C++</h3>
+              <span class="cert-date">August 2026</span>
+            </div>
+            <p class="cert-issuer">Centre for Professional Enhancement, LPU</p>
+            <span class="cert-badge cert-badge--merit">Certificate of Merit — Grade A</span>
+          </div>
+        </div>
+
+        <div class="cert-entry stagger-item">
+          <div class="cert-timeline-line" aria-hidden="true">
+            <span class="cert-dot"></span>
+          </div>
+          <div class="cert-content">
+            <div class="cert-header">
+              <h3 class="cert-title">Database Management System Part 1</h3>
+              <span class="cert-date">July 2026</span>
+            </div>
+            <p class="cert-issuer">Infosys Springboard</p>
+          </div>
+        </div>
+
+        <div class="cert-entry stagger-item">
+          <div class="cert-timeline-line" aria-hidden="true">
+            <span class="cert-dot"></span>
+          </div>
+          <div class="cert-content">
+            <div class="cert-header">
+              <h3 class="cert-title">Programming Using C++</h3>
+              <span class="cert-date">August 2025</span>
+            </div>
+            <p class="cert-issuer">Infosys Springboard</p>
+          </div>
+        </div>
+
+        <div class="cert-entry stagger-item">
+          <div class="cert-timeline-line" aria-hidden="true">
+            <span class="cert-dot"></span>
+          </div>
+          <div class="cert-content">
+            <div class="cert-header">
+              <h3 class="cert-title">Python with Libraries</h3>
+              <span class="cert-date">January 2025</span>
+            </div>
+            <p class="cert-issuer">Skillera</p>
+          </div>
+        </div>
+
+        <div class="cert-entry stagger-item">
+          <div class="cert-timeline-line" aria-hidden="true">
+            <span class="cert-dot"></span>
+          </div>
+          <div class="cert-content">
+            <div class="cert-header">
+              <h3 class="cert-title">Cloud Fundamentals with Proctored Exam</h3>
+              <span class="cert-date">March 2025</span>
+            </div>
+            <p class="cert-issuer">Coding Tantra</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EDUCATION ===================== -->
+  <section class="section education-section" id="education" aria-labelledby="education-heading">
+    <div class="container">
+
+      <div class="section-label reveal">
+        <span class="label-number">07</span>
+        <span class="label-slash">/</span>
+        <span class="label-text">EDUCATION</span>
+      </div>
+
+      <h2 class="section-heading reveal" id="education-heading">
+        WHERE I'M<br />
+        <span class="heading-accent">BUILDING MY FOUNDATION.</span>
+      </h2>
+
+      <!-- Primary — University -->
+      <div class="edu-primary reveal">
+        <div class="edu-primary-header">
+          <div class="edu-primary-identity">
+            <span class="edu-institution-name">Lovely Professional University</span>
+            <span class="edu-institution-location">Phagwara, Punjab</span>
+          </div>
+          <div class="edu-primary-dates">
+            <span class="edu-dates">August 2024 – Present</span>
+          </div>
+        </div>
+        <h3 class="edu-degree">Bachelor of Technology — Computer Science and Engineering</h3>
+        <div class="edu-stats">
+          <div class="edu-stat">
+            <span class="edu-stat-label">CGPA</span>
+            <span class="edu-stat-value">6.64</span>
+          </div>
+          <div class="edu-stat">
+            <span class="edu-stat-label">Status</span>
+            <span class="edu-stat-value">Ongoing · Third Year</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Secondary education -->
+      <div class="edu-secondary-list">
+
+        <div class="edu-secondary-entry reveal">
+          <div class="edu-secondary-marker" aria-hidden="true"></div>
+          <div class="edu-secondary-content">
+            <div class="edu-secondary-header">
+              <h3 class="edu-secondary-institution">APEX Junior College</h3>
+              <span class="edu-secondary-dates">June 2022 – May 2024</span>
+            </div>
+            <p class="edu-secondary-degree">Intermediate</p>
+            <p class="edu-secondary-result">Percentage: 63.9%</p>
+          </div>
+        </div>
+
+        <div class="edu-secondary-entry reveal">
+          <div class="edu-secondary-marker" aria-hidden="true"></div>
+          <div class="edu-secondary-content">
+            <div class="edu-secondary-header">
+              <h3 class="edu-secondary-institution">The Sun School</h3>
+              <span class="edu-secondary-dates">May 2021 – May 2022</span>
+            </div>
+            <p class="edu-secondary-degree">Matriculation (Class X)</p>
+            <p class="edu-secondary-result">Percentage: 68.4%</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== LEADERSHIP ===================== -->
+  <section class="section leadership-section" id="leadership" aria-labelledby="leadership-heading">
+    <div class="container">
+
+      <div class="section-label reveal">
+        <span class="label-number">08</span>
+        <span class="label-slash">/</span>
+        <span class="label-text">BEYOND CODE</span>
+      </div>
+
+      <h2 class="section-heading reveal" id="leadership-heading">
+        WORKING WITH<br />
+        <span class="heading-accent">PEOPLE MATTERS, TOO.</span>
+      </h2>
+
+      <div class="leadership-timeline">
+
+        <div class="leadership-entry stagger-item">
+          <div class="leadership-line" aria-hidden="true"></div>
+          <div class="leadership-content">
+            <div class="leadership-header">
+              <span class="leadership-role">Team Lead</span>
+              <span class="leadership-date">April 2026</span>
+            </div>
+            <h3 class="leadership-event">YouthVibe — LPU's Global Open Fest</h3>
+            <p class="leadership-desc">Led a team in LPU's flagship international cultural festival, coordinating participation, managing responsibilities, and ensuring smooth collaboration.</p>
+          </div>
+        </div>
+
+        <div class="leadership-entry stagger-item">
+          <div class="leadership-line" aria-hidden="true"></div>
+          <div class="leadership-content">
+            <div class="leadership-header">
+              <span class="leadership-role">Coordinator</span>
+              <span class="leadership-date">February 2025</span>
+            </div>
+            <h3 class="leadership-event">Concoction 2025 — LPU's Intra-University Tech Fusion Event</h3>
+            <p class="leadership-desc">Coordinated event logistics and participant management for a cross-disciplinary tech fusion event, applying organizational and communication skills.</p>
+          </div>
+        </div>
+
+        <div class="leadership-entry stagger-item">
+          <div class="leadership-line" aria-hidden="true"></div>
+          <div class="leadership-content">
+            <div class="leadership-header">
+              <span class="leadership-role">Volunteer</span>
+              <span class="leadership-date">November 22, 2024</span>
+            </div>
+            <h3 class="leadership-event">TEDxLPU Women</h3>
+            <p class="leadership-desc">Volunteered at TEDxLPU Women, contributing to event operations and supporting an inclusive, professionally run speaker event on campus.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="section contact-section" id="contact" aria-labelledby="contact-heading">
+    <div class="contact-inner">
+      <div class="container">
+
+        <div class="section-label section-label--light reveal">
+          <span class="label-number">09</span>
+          <span class="label-slash">/</span>
+          <span class="label-text">GET IN TOUCH</span>
+        </div>
+
+        <h2 class="section-heading section-heading--light reveal" id="contact-heading">
+          HAVE A PROJECT<br />
+          <span class="heading-accent--light">OR OPPORTUNITY IN MIND?</span>
+        </h2>
+
+        <p class="contact-body reveal">
+          I'm interested in software development, Python, and AI-related opportunities. Feel free to connect with me about internships, projects, or technical collaboration.
+        </p>
+
+        <div class="contact-actions reveal">
+          <a href="mailto:tanujgrandhi1612off@gmail.com"
+             class="btn btn-contact arrow-link"
+             aria-label="Email Tanuj Grandhi">
+            Let's Connect →
+          </a>
+        </div>
+
+        <div class="contact-links reveal">
+          <a href="mailto:tanujgrandhi1612off@gmail.com" class="contact-link" aria-label="Send an email">
+            <span class="contact-link-label">Email</span>
+            <span class="contact-link-value">tanujgrandhi1612off@gmail.com</span>
+          </a>
+          <a href="https://www.linkedin.com/in/tanuj-grandhi/"
+             class="contact-link"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="Visit LinkedIn profile">
+            <span class="contact-link-label">LinkedIn</span>
+            <span class="contact-link-value">linkedin.com/in/tanuj-grandhi</span>
+          </a>
+          <a href="https://github.com/tanuj-grandhi"
+             class="contact-link"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="Visit GitHub profile">
+            <span class="contact-link-label">GitHub</span>
+            <span class="contact-link-value">github.com/tanuj-grandhi</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-copy">
+          TANUJ GRANDHI © <span id="footerYear">2026</span>
+        </p>
+        <p class="footer-tagline">Designed with curiosity. Built with code.</p>
+        <div class="footer-links">
+          <a href="https://github.com/tanuj-grandhi"
+             class="footer-link"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="Tanuj Grandhi on GitHub">
+            GitHub
+          </a>
+          <span class="footer-sep" aria-hidden="true">·</span>
+          <a href="https://www.linkedin.com/in/tanuj-grandhi/"
+             class="footer-link"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="Tanuj Grandhi on LinkedIn">
+            LinkedIn
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
