@@ -1815,7 +1815,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
   .hero-photo-col {
     min-height: auto;
-    order: -1; /* show photo above text on tablet/mobile */
+    order: 1; /* text first, photo below on mobile */
   }
 
   .hero-photo-frame {
